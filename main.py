@@ -26,6 +26,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    
     return "<h1>HELLO API GRUPO 19</h1>"
 
 # Entregar todos los atributos de todos los mensajes en la bdd
