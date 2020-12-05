@@ -25,9 +25,8 @@ mensajes = db.mensajes
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    
-    return "<h1>HELLO API GRUPO 19</h1>"
+def home(): 
+    return <meta http-equiv="refresh" content="1;url=https://navierasybuques.herokuapp.com/messages">
 
 # Entregar todos los atributos de todos los mensajes en la bdd
 #Recibe en la url los parametros id1 e id2 de dos usuarios y obtenga todos los mensajes entre ambos usuarios
