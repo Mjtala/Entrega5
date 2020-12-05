@@ -1,1 +1,1 @@
-web: gunicorn index.php:app
+web: gunicorn main:app
