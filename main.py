@@ -4,6 +4,8 @@ from werkzeug.exceptions import BadRequest
 import pymongo
 import os
 
+import requests
+
 USER = "grupo19"
 PASS = "grupo19"
 DATABASE = "grupo19"
@@ -26,8 +28,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home(): 
-    return <meta http-equiv="refresh" content="1;url=https://navierasybuques.herokuapp.com/messages">
-
+    requests.head('http://codd.ing.puc.cl/~grupo19/index.php')
+     
 # Entregar todos los atributos de todos los mensajes en la bdd
 #Recibe en la url los parametros id1 e id2 de dos usuarios y obtenga todos los mensajes entre ambos usuarios
 @app.route("/messages")
@@ -43,6 +45,7 @@ def get_messages():
     else:
         results = list(mensajes.find({},{"_id":0}))
         return json.jsonify(results)
+
 
 # Entrega info de un mensaje particular
 @app.route("/messages/<int:mid>")
