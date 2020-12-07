@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home(): 
-    requests.head('http://codd.ing.puc.cl/~grupo19/index.php')
+    print("hola")
      
 # Entregar todos los atributos de todos los mensajes en la bdd
 #Recibe en la url los parametros id1 e id2 de dos usuarios y obtenga todos los mensajes entre ambos usuarios
