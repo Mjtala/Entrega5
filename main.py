@@ -4,7 +4,6 @@ from werkzeug.exceptions import BadRequest
 import pymongo
 import os
 
-import requests
 
 USER = "grupo19"
 PASS = "grupo19"
