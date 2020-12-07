@@ -27,7 +27,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home(): 
-    print("hola")
+     return "<h1>¡Hola!</h1>"
      
 # Entregar todos los atributos de todos los mensajes en la bdd
 #Recibe en la url los parametros id1 e id2 de dos usuarios y obtenga todos los mensajes entre ambos usuarios
