@@ -13,7 +13,7 @@ URL = f"mongodb://{USER}:{PASS}@gray.ing.puc.cl/{DATABASE}?authSource=admin"
 client = MongoClient(URL)
 
 USER_KEYS = ['uid', 'name','age', 'description']
-MENSAJES_KEYS = ['mid', 'message', 'sender', 'receptant', 'lat', 'long', 'date']
+MENSAJES_KEYS = ['message', 'sender', 'receptant', 'lat', 'long', 'date']
 SEARCH_KEYS = ["desired", "required", "forbidden", "userId"]
 
 # Base de datos del grupo
